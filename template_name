@@ -1,0 +1,14 @@
+/* ----- bin - This adds the template name at the top 
+-------- of the browser window */
+
+
+add_action('wp_head', 'show_template');
+
+function show_template() {
+
+    global $template;
+
+    print_r($template);
+
+}
+
